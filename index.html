@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>GRE Prep</title>
+</head>
+<body>
+    <div id="topbar">
+        <h1>GRE Prep</h1>
+    </div>
+    <div id="content">
+    <div id="intro" class="block">
+        <div class="div-title">
+            What is GRE Prep?
+        </div>
+        <div class="div-content">If you are planning to give the <a href="https://www.ets.org/gre" target="_blank">GRE</a> exam, you have arrived at the correct place.<br>
+            We provide you with free resources for learning the concepts, a dictionary for the Verbal section and
+            quizzes for practicing and get you ready for taking the exam and ace it!
+        </div>
+        <p>So what are you waiting for? Sign up and start learning!</p>
+    </div>
+    <br>
+    <div class="block">
+        <div class="div-title">Features:<br></div>
+        <table id="feature">
+            <tr>
+            <td><i class=" ft fas fa-hand-holding-usd"></i>Free access to all content</td>
+            <td><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+            <td><i class="ft fas fa-spell-check"></i>A dictionary with meanings, synonyms and example sentences for better understanding</td>
+            <td><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+            <td><i class="ft fas fa-brain"></i>Quizzes to help you test your knowledge</td>
+            <td><i class="fas fa-check"></i></td>
+            </tr>
+        </table>
+    </div>
+    <div id="login" class="block hide">
+        <h2>Login</h2>
+        <span class="small"><p>New User?<br>
+        <span class="form-change">Sign up</span></p></span>
+        <form action="home.html" method="post">
+            <div class="error hide"></div>
+            <div>
+            <label for="email">Email*</label>
+            <i class="fas fa-user"></i>
+            <input name="email" id="email" type="email" placeholder="Enter your registered mail id" required>
+            </div>
+            <div>
+            <label for="password">Password*</label>
+            <i class="fas fa-lock"></i>
+            <input name="password" id="password" type="password" placeholder="Enter your password" required>
+            </div>
+            <div>
+            <button type="button">Login</button>
+            </div>
+        </form>
+    </div>
+    <div id="sign-up" class="block">
+        <h2>Get Started</h2>
+        <span class="small">
+        <p>Already have an account?<br>
+        <span class="form-change">Login</span></p>
+        </span>
+        <form>
+            <div id="n">
+            <label for="fname">First Name*</label>
+            <i class="fas fa-user"></i>
+            <input name="fname" id="fname" type="text" placeholder="Enter your first name">
+            <i class="fas fa-exclamation-circle fail hide"></i>
+            <i class="fas fa-check-circle success hide"></i>
+            <div class="error hide"></div>
+            </div>
+            <div>
+            <label for="lname">Last Name</label>
+            <i class="fas fa-user"></i>
+            <input name="lname" id="lname" type="text" placeholder="Enter your last name(Optional)">
+            </div>
+            <div id="e">
+            <label for="s_email">Enter email*</label>
+            <i class="fas fa-envelope"></i>
+            <input name="s_email" id="s_email" type="email" placeholder="Enter your E-mail id">
+            <i class="fas fa-exclamation-circle fail hide"></i>
+            <i class="fas fa-check-circle success hide"></i>
+            <div class="error hide"></div>
+            </div>
+            <div id="p">
+            <label for="s_pass">Enter Password*</label>
+            <i class="fas fa-lock"></i>
+            <input name="s_pass" id="s_pass" type="password" placeholder="Enter a password">
+            <i class="fas fa-exclamation-circle fail hide"></i>
+            <i class="fas fa-check-circle success hide"></i>
+            <div class="error hide"></div>
+            </div>
+            <div id="cp">
+            <label for="s_cpass">Confirm Password*</label>
+            <i class="fas fa-lock"></i>
+            <input name="s_cpass" id="s_cpass" type="password" placeholder="Re-enter the password">
+            <i class="fas fa-exclamation-circle fail hide"></i>
+            <i class="fas fa-check-circle success hide"></i>
+            <div class="error hide"></div>
+            </div>
+            <div>
+            <button id="register" type="button">Register</button>  
+            </div>
+        </form>
+    </div>
+    </div>
+    <script src="js/form.js"></script>
+</body>
+</html>
